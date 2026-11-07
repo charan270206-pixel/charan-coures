@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instructor Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h2>🎓 Instructor Dashboard</h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="login.html">Logout</a>
+    </nav>
+</header>
+
+<section class="content">
+    <h1>Welcome, Instructor!</h1>
+    <h2>Create New Course</h2>
+
+    <div class="form-container">
+        <form id="courseForm">
+            <input type="text" id="courseTitle"
+                   placeholder="Course Title" required>
+
+            <textarea id="courseDescription"
+                      placeholder="Course Description" required></textarea>
+
+            <input type="number" id="coursePrice"
+                   placeholder="Course Price" required>
+
+            <input type="number" id="courseDuration"
+                   placeholder="Duration in Hours" required>
+
+            <button type="submit">Add Course</button>
+        </form>
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
